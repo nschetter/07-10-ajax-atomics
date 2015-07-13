@@ -1,0 +1,12 @@
+<h1>AJAX Atomics - 01</h1>
+
+<script type="text/javascript" src="/global.js"></script>
+
+<h2>Why are you able to make requests to /info1 and /info2 even though there are no route handlers for those paths defined in app.rb?</h2>
+<p>These requests are made to the public folder, which contains both of these files.</p>
+
+<h2>Why is the XHR object's request path /info1 instead of /public/info1?</h2>
+<p>Sinatra will always look in the public folder for these files, so the /public before each file is unneccesary.</p>
+
+<h2>Within the addEventListener function, what does this represent?</h2>
+<p>This represents the XML request itself</p>
